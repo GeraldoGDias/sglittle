@@ -1,0 +1,27 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item [routerLink]="linkrouter.DashboardLink">
+                <i class="material-icons">
+                    dashboard
+                </i>
+                Dashboard
+            </a>
+            <a mat-list-item [routerLink]="linkrouter.UsuarioLink">
+                <i class="material-icons">
+                    perm_identity
+                </i>
+                Usuário
+            </a>
+            <a mat-list-item [routerLink]="linkrouter.ProdutoLink">
+                <i class="material-icons">
+                    storefront
+                </i>
+                Produto
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
